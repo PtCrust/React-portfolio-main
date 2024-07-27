@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html{
+  /* box-sizing: border-box; */
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  --light: #fff;
+  --black: #000;
+  --secondary: #181818;
+  --borderColor: rgba(63, 63, 70, 0.4);
+  --title: rgb(244, 244, 245);
+  --subTitle: rgb(161, 161, 170);
+  --bgHeader: rgb(39, 39, 42);
+  --blue: rgb(93, 188, 252);
+  --icon-hover: #d4d4d8;
+  --container-padding: 2rem;
+}
+.light{
+  --light: #fff;
+  --black: rgb(255, 255, 255);
+  --secondary:rgb(255, 233, 195);
+  --borderColor: rgba(63, 63 , 70, 0.4);
+  --title: rgb(48, 48, 49);
+  --subTitle: rgb(57, 57, 61);
+  --bgHeader: rgb(255, 255, 255);
+  --blue: rgb(93, 188, 252);
+  --icon-hover: #d4d4d8;
+  --container-padding: 2rem;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--light);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  border: solid var(--borderColor) 2px;
+  width: 80%;
+  margin: auto;
+  background-color: var(--secondary);
+  padding: 0 var(--container-padding);
+}
+
+.divider {
+  border-bottom: solid var(--borderColor) 1px;
+  margin: 3rem 0;
+  width: calc(100% + var(--container-padding) + var(--container-padding));
+  margin-left: calc(var(--container-padding) * -1);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: initial;
+  transition: 0.2s;
+}
+
+.flex {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+.borderr {
+  border: solid 2px red;
+}
+
+button {
+  all: unset;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  scale: 0.9;
+}
+@media (max-width: 700px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}

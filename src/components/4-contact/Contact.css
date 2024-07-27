@@ -1,0 +1,126 @@
+section.contact-us .icon-mail {
+  color: var(--subTitle);
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+
+section.contact-us .title {
+  font-size: 2.2rem;
+  color: var(--title);
+  margin-bottom: 1rem;
+}
+section.contact-us .subtitle {
+  color: var(--subTitle);
+  margin-bottom: 2rem;
+  line-height: 1.7rem;
+}
+/*=====================================
+    1. Input-text & Textarea 
+=====================================*/
+
+section.contact-us label {
+  color: var(--subTitle);
+}
+section.contact-us #email,
+section.contact-us #textarea {
+  all: unset;
+  background-color: var(--bgHeader);
+  border: 1px solid rgba(63, 63, 70, 1);
+  color: var(--title);
+  width: 18rem;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+section.contact-us #email:focus,
+section.contact-us #textarea:focus,
+section.contact-us #email:hover,
+section.contact-us #textarea:hover {
+  border: 1px solid var(--blue);
+}
+
+section.contact-us #textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+/*=====================================
+    2. button submit
+=====================================*/
+
+section.contact-us .submit {
+  /* background-color: rgba(36, 37, 46, 1); */
+  background-color:var(--bgHeader);
+  color: var(--title);
+  /* width: 11rem; */
+  text-align: center;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  border: 1px solid rgba(63, 63, 70, 1);
+  transition: 0.3s;
+  margin-top: 1.8rem;
+  text-align: center;
+  width: 30%;
+}
+
+section.contact-us .submit:hover {
+  opacity: 1;
+  font-weight: bold;
+  border: 1px solid var(--blue);
+}
+
+section.contact-us .submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+/* main.flex .left-section button.active {
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.01rem;
+  padding: 0.8rem 0;
+  border: 1px solid var(--blue);
+} */
+
+section.contact-us .animation{
+  width: 100%;
+  height: 100%;
+}
+
+/*=====================================
+    3. Responsive design
+=====================================*/
+
+@media (max-width: 600px) {
+  section.contact-us .animation {
+    display: none;
+  }
+  section.contact-us form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  section.contact-us form div.flex {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  section.contact-us #email,
+  section.contact-us #textarea {
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    margin-left: 0;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  section.contact-us .submit {
+  width: 30%;
+  align-self: center ;
+  
+  }
+}

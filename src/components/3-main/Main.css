@@ -1,0 +1,119 @@
+main.flex {
+  gap: 3rem;
+  align-items: start;
+}
+/*=====================================
+    1. Left Section => Buttons
+=====================================*/
+main.flex .left-section {
+  flex-direction: column;
+  gap: 10px;
+}
+
+main.flex .left-section button {
+  /* background-color: rgba(36, 37, 46, 1); */
+  background-color: var(--bgHeader);
+  width: 11rem;
+  text-align: center;
+  color: var(--title);
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+main.flex .left-section button:hover {
+  opacity: 1;
+}
+
+main.flex .left-section button.active {
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.01rem;
+  padding: 0.8rem 0;
+  border: 1px solid var(--blue);
+}
+
+/*=====================================
+    2. Right Section => Cards
+=====================================*/
+
+main.flex .right-section {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 0.8rem;
+}
+.card {
+  border: 1px solid rgba(93, 188, 252, 0.3);
+/*   transition: 0.3s; */
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: var(--bgHeader);
+  height:fit-content;
+}
+.card:hover {
+  transition: 0.3s;
+  border: 1px solid var(--blue);
+  scale: 1.05;
+  rotate: 2deg;
+}
+.card .box {
+  padding: 1rem 0.4rem;
+  height: fit-content;
+}
+.card .box .title {
+  color: var(--title);
+}
+.card .box .sub-title {
+  color: var(--subTitle);
+  font-size: 0.8rem;
+  margin: 0.8rem 0px;
+}
+.card .box .icons {
+  justify-content: space-between;
+}
+.card .box .icons a {
+  color: var(--subTitle);
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.card .box .icons a:hover {
+  color: var(--icon-hover);
+  font-size: 1.25rem;
+}
+.card .box .icons a.more {
+  color: var(--blue);
+  font-size: 1rem;
+  gap: 2px;
+  transition: 0.3s;
+}
+.card .box .icons a.more:hover {
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+
+/*=====================================
+    3. Responsive design
+=====================================*/
+
+@media (max-width: 600px) {
+  main.flex {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  main.flex .left-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  main.flex .left-section button {
+    width: 8rem;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+  }
+}
